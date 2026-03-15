@@ -10,7 +10,6 @@ file_count = 0
 for root, dirs, files in os.walk(path):
     if len(dirs) > 1:
         print("Classes:", dirs)
-    for file in files:
-        file_count += 1
+    file_count += len(files)
 
 print("Total files:", file_count)
